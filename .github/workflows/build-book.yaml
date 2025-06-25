@@ -79,7 +79,7 @@ jobs:
   build-book:
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/openradar/erad2024:latest
+      image: ghcr.io/openradar/ams2025:latest
       options: --user root
       env:
         BASE_URL: /${{ github.event.repository.name }}
