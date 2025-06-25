@@ -89,7 +89,7 @@ jobs:
       - name: Build the book
         uses: addnab/docker-run-action@v3
         with:
-          image: ghcr.io/openradar/erad2024:latest
+          image: ghcr.io/openradar/ams2025:latest
           options: --user root -v ${{ github.workspace }}:/work -e BASE_URL=/${{ github.event.repository.name }}/_preview/${{ github.event.pull_request.number }}
           shell: bash -l {0}
           run: |
