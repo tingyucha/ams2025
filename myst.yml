@@ -2,8 +2,8 @@ version: 1
 extends:
   - https://raw.githubusercontent.com/projectpythia-mystmd/pythia-config/main/pythia.yml
 project:
-  title: ERAD 2024
-  github: https://github.com/openradar/erad2024
+  title: AMS Open Radar Short Course 2025
+  github: https://github.com/openradar/ams2025
   authors:
     - name: Alfonso Ladino
       orcid: 0000-0001-8081-7827
