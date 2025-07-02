@@ -14,7 +14,6 @@ dependencies:
   - pydda
   - zarr
   - xradar>=0.6.3
-  - numpy<2.0
   - python<=3.11
   - metpy # needed for pyrad example
   # this is needed for gpm-api
@@ -63,7 +62,7 @@ dependencies:
   # needed for LROSE / pyrad
   - metpy
   - jupyterlab_rise
+  - xarray
   - pip
   - pip:
-    - arm_pyart>=1.19.0
-    - git+https://github.com/pydata/xarray@d33e4ad9407591cc7287973b0f8da47cae396004
+    - arm_pyart>=2.0.0
