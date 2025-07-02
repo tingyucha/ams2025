@@ -62,7 +62,7 @@ dependencies:
   # needed for LROSE / pyrad
   - metpy
   - jupyterlab_rise
+  - xarray
   - pip
   - pip:
     - arm_pyart>=2.0.0
-    - git+https://github.com/pydata/xarray@d33e4ad9407591cc7287973b0f8da47cae396004
