@@ -65,8 +65,7 @@ project:
         - file: notebooks/xradar-pyart/xradar-basics.ipynb
         - title: Py-ART and wradlib
           children:
-            - file: notebooks/xradar-pyart/pyart-basics.ipynb
-            - file: notebooks/wradlib/wradlib_clutter_beamblockage.ipynb
+            - file: notebooks/xradar-pyart/xradar-basics-pyart.ipynb
         - file: notebooks/gpm-api/gpm-api-intro.ipynb
         - title: BALTRAD
           children:
