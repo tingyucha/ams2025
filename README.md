@@ -10,7 +10,7 @@ This tutorial covers how to get started with the Open Radar Science stack!
 
 ## Motivation
 
-The course will take place on 24 August 2025, the day before the [41st AMS International Radar Meeting (ams2025)](https://www.ametsoc.org/ams/meetings-events/ams-meetings/41st-international-conference-on-radar-meteorology/).
+The course will take place on 24 August 2025, the day before the 41st AMS International Radar Meeting (ams2025).
 The course will discuss the principles of open science and provide an overview of the most mature and exciting software packages available for radar data processing
 (ex.
 [LROSE](https://github.com/NCAR/lrose-core),
