@@ -3,7 +3,7 @@
 # AMS 2025 Open Radar Science Short Courses
 
 [![DOI](https://zenodo.org/badge/784778069.svg)](https://zenodo.org/doi/10.5281/zenodo.13694510)
-[![nightly-build](https://github.com/openradar/ams2025/actions/workflows/publish-book.yaml/badge.svg)](https://github.com/openradar/ams2025/actions/workflows/publish-book.yaml)
+[![nightly-build](https://github.com/openradar/ams2025/actions/workflows/publish-book.yaml/badge.svg?branch=main)](https://github.com/openradar/ams2025/actions/workflows/publish-book.yaml)
 [![Binder](https://binder.projectpythia.org/badge_logo.svg)](https://binder.projectpythia.org/v2/gh/openradar/ams2025/main?labpath=notebooks)
 
 This tutorial covers how to get started with the Open Radar Science stack!
