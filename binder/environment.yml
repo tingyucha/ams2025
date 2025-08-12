@@ -64,6 +64,7 @@ dependencies:
   - jupyterlab_rise
   - xarray
   - plotly
+  - tobac
   - pip
   - pip:
     - arm_pyart>=2.0.0
