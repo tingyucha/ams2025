@@ -84,7 +84,7 @@ project:
             - file: notebooks/Analysis-Ready/QPE-QVPs.ipynb
   jupyter:
       binder:
-        repo: openradar/erad2024
+        repo: ProjectPythia/erad2024
         url: https://binder.projectpythia.org/
   abbreviations:
     ARM: Atmospheric Radiation Measurement
