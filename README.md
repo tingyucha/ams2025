@@ -3,14 +3,14 @@
 # AMS 2025 Open Radar Science Short Courses
 
 [![DOI](https://zenodo.org/badge/784778069.svg)](https://zenodo.org/doi/10.5281/zenodo.13694510)
-[![nightly-build](https://github.com/openradar/ams2025/actions/workflows/publish-book.yaml/badge.svg)](https://github.com/openradar/ams2025/actions/workflows/publish-book.yaml)
-[![Binder](https://binder.projectpythia.org/badge_logo.svg)](https://binder.projectpythia.org/v2/gh/openradar/ams2025/main?labpath=notebooks)
+[![nightly-build](https://github.com/openradar/ams2025/actions/workflows/publish-book.yaml/badge.svg?branch=main)](https://github.com/openradar/ams2025/actions/workflows/publish-book.yaml)
+[![Binder](https://binder.projectpythia.org/badge_logo.svg)](https://binder.projectpythia.org/v2/gh/ProjectPythia/ams2025/main?labpath=notebooks)
 
 This tutorial covers how to get started with the Open Radar Science stack!
 
 ## Motivation
 
-The course will take place on 24 August 2025, the day before the [41st AMS International Radar Meeting (ams2025)](https://www.ametsoc.org/ams/meetings-events/ams-meetings/41st-international-conference-on-radar-meteorology/).
+The course will take place on 24 August 2025, the day before the 41st AMS International Radar Meeting (ams2025).
 The course will discuss the principles of open science and provide an overview of the most mature and exciting software packages available for radar data processing
 (ex.
 [LROSE](https://github.com/NCAR/lrose-core),
@@ -41,12 +41,7 @@ data processing, using open datasets relevant to the attendees and ams2025.
 - Anna del Moral Méndez, National Center for Atmospheric Research (NCAR)
 - Brenda Javornik, National Center for Atmospheric Research (NCAR)
 - Daniel Michelson, Environment and Climate Change Canada (ECCC)
-- Daniel Wolfensberger, MeteoSwiss (MCH)
-- Gionata Ghiggi, Ecole Polytechnique Fédérale de Lausanne (EPFL)
 - Jen DeHart, Colorado State University (CSU)
-- Jordi Figueras i Ventura, independent radar scientist
-- Julian Giles, University of Bonn
-- Kai Mühlbauer, University of Bonn
 - Maxwell Grover, Argonne National Laboratory
 - Mike Dixon, National Center for Atmospheric Research (NCAR)
 - Robert Jackson, Argonne National Laboratory
