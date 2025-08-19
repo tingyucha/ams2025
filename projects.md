@@ -1,7 +1,11 @@
 # [Projects Overview](https://docs.google.com/presentation/d/1nhTSNZ7JFN-Y09PDerS4UXK4lhb0kFNxSGGrOOjriJk/edit?usp=sharing)
 
 ## [Creating analysis-ready data with xradar with Quasi-Vertical Profiles (QVPs)](notebooks/Analysis-Ready/ARCO-Datasets.ipynb)
-In this project, students will demonstrate how utilizing radar data in the Analysis-Ready Cloud-Optimized (ARCO) format enables efficient computation of Quantitative Precipitation Estimates (QPE) and Quasi-Vertical Profiles (QVP). The ARCO format ensures that radar data is pre-processed, clean, and well-organized, significantly reducing the time spent on data preparation and cleaning.
+- Science Question: Can the quasi-vertical profile (QVP) technique provide meaningful insights into hail formation and other microphysical processes during convective events?
+- Project Scope: Use cloud-optimized, analysis-ready radar data to generate QVPs and identify signatures of heavy rainfall rates or hail formation (e.g., enhanced ZDR, KDP, Z). Success is a reproducible workflow that detects extreme weather/heavy rainfall rates / hail-related microphysical features from volumetric scans.
+- Datasets:
+  - Calgary Hail Storm 2024 radar data
+  - Ontario Derecho 2022 radar data
 
 ## Derecho Rainfall Totals with Py-ART
 
