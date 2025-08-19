@@ -1,1 +1,1 @@
-FROM ghcr.io/openradar/ams2025:pr_13
+FROM ghcr.io/openradar/ams2025:pr_17
