@@ -2,9 +2,10 @@ USER root
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt update && \
+    apt-get install -y wget ca-certificates && \
+    rm -rf /var/lib/apt/lists/* && \
     wget -q -O /tmp/lrose.deb https://github.com/NCAR/lrose-core/releases/download/lrose-core-20250811/lrose-core-20250811.ubuntu_24.04.amd64.deb && \
-    dpkg-deb -x /tmp/lrose.deb / && \
-    apt-get -y install nodejs && \
+    apt-get -y /tmp/lrose.deb install nodejs && \
     apt-get clean && \
     rm -rf /tmp/lrose.deb
 
