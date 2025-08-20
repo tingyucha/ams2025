@@ -3,7 +3,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt update && \
     wget -q -O /tmp/lrose.deb https://github.com/NCAR/lrose-core/releases/download/lrose-core-20250811/lrose-core-20250811.ubuntu_24.04.amd64.deb && \
-    apt-get -y install /tmp/lrose.deb nodejs && \
+    dpkg-deb -x /tmp/lrose.deb && \
+    apt-get -y install nodejs && \
     apt-get clean && \
     rm -rf /tmp/lrose.deb
 
