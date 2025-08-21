@@ -62,8 +62,7 @@ project:
     - title: Radar Software Foundations
       children:
         - file: presentations/intro-to-open-radar-science.ipynb
-        - file: notebooks/xradar-pyart/xradar-basics.ipynb
-        - title: Py-ART and wradlib
+        - title: Xradar, Py-ART and wradlib
           children:
             - file: notebooks/xradar-pyart/xradar-basics-pyart.ipynb
         - title: BALTRAD
@@ -81,7 +80,6 @@ project:
         - title: ARCO Radar Datasets
           children:
             - file: notebooks/Analysis-Ready/ARCO-Datasets.ipynb
-            - file: notebooks/Analysis-Ready/QPE-QVPs.ipynb
   jupyter:
       binder:
         repo: ProjectPythia/erad2024

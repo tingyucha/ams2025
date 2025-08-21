@@ -62,9 +62,11 @@ dependencies:
   # needed for LROSE / pyrad
   - metpy
   - jupyterlab_rise
-  - xarray
   - plotly
   - tobac
+  # needed for ARCO datasets
+  - xarray>=2025.08.0
+  - icechunk>=1.1.3
   - pip
   - pip:
     - arm_pyart>=2.0.0
