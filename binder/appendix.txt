@@ -12,6 +12,7 @@ RUN CONDA_DIR=/srv/conda && \
     RADARENV=notebook && \
     CONDA_PREFIX=$CONDA_DIR/envs/$RADARENV && \
     export PROJ_NETWORK=ON && \
+    export HDF5_DISABLE_VERSION_CHECK=1 && \
     export BALTRAD_INSTALL_ROOT=${PWD} && \
     echo "export CONDA_DIR=$CONDA_DIR" >> ~/.profile && \
     echo "export RADARENV=$RADARENV" >> ~/.profile && \
