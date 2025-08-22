@@ -1,23 +1,33 @@
 USER root
 ENV DEBIAN_FRONTEND=noninteractive
-
 RUN apt update && \
     wget -q -O /tmp/lrose.deb https://github.com/NCAR/lrose-core/releases/download/lrose-core-20250811/lrose-core-20250811.ubuntu_22.04.amd64.deb && \
-    apt-get -y install /tmp/lrose.deb nodejs && \
-    apt-get clean && \
-    rm -rf /tmp/lrose.deb
+    apt-get -y install /tmp/lrose.deb nodejs patchelf && \
+    apt-get clean && rm -rf /tmp/lrose.deb && \
+    printf '/usr/local/lrose/lib\n/usr/lib/x86_64-linux-gnu\n' > /etc/ld.so.conf.d/lrose.conf && ldconfig
 
 USER ${NB_USER}
 RUN CONDA_DIR=/srv/conda && \
     RADARENV=notebook && \
     CONDA_PREFIX=$CONDA_DIR/envs/$RADARENV && \
     export PROJ_NETWORK=ON && \
-    export HDF5_DISABLE_VERSION_CHECK=1 && \
     export BALTRAD_INSTALL_ROOT=${PWD} && \
     echo "export CONDA_DIR=$CONDA_DIR" >> ~/.profile && \
     echo "export RADARENV=$RADARENV" >> ~/.profile && \
     echo "export CONDA_PREFIX=$CONDA_PREFIX" >> ~/.profile && \
     echo "export PROJ_NETWORK=$PROJ_NETWORK" >> ~/.profile && \
+    # --- ensure system HDF5 is preferred whenever the env is active ---
+    mkdir -p $CONDA_PREFIX/etc/conda/activate.d $CONDA_PREFIX/etc/conda/deactivate.d && \
+    printf '%s\n' \
+'export _OLD_LD_LIBRARY_PATH="$LD_LIBRARY_PATH"' \
+'export LD_LIBRARY_PATH=/usr/local/lrose/lib:/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH' \
+'export HDF5_DISABLE_VERSION_CHECK=2' \
+> $CONDA_PREFIX/etc/conda/activate.d/10-lrose-libs.sh && \
+    printf '%s\n' \
+'export LD_LIBRARY_PATH="$_OLD_LD_LIBRARY_PATH"' \
+'unset _OLD_LD_LIBRARY_PATH' \
+> $CONDA_PREFIX/etc/conda/deactivate.d/10-lrose-libs.sh && \
+    # ---------------------------------------------------------------
     ${CONDA_PREFIX}/bin/bash -l $BALTRAD_INSTALL_ROOT/install/baltrad/install_baltrad.sh && \
     rm -rf $BALTRAD_INSTALL_ROOT/install && \
     ${MAMBA_EXE} clean --all -f -y && \
